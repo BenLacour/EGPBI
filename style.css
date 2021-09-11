@@ -12,7 +12,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  background-image: url("./content/");
+  background-image: url("./content/bg_page1.png"), url("./content/bg_page2.png");
+  background-position: top, bottom;
+  background-repeat: no-repeat, no-repeat;
 }
 
 ul {
@@ -22,6 +24,17 @@ ul {
 a {
   color: black;
   text-decoration: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  background-color: #1a8093;
+  color: white;
+}
+
+img {
+  object-fit: cover;
 }
 
 /* ------------------------------------------- Page 1 ------------------------------------------- */
@@ -44,6 +57,7 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   margin: 4rem 0;
+  align-items: center;
 }
 
 nav ul li {
@@ -57,7 +71,7 @@ header {
   justify-content: space-around;
 }
 
-.presentationText {
+.welcomeText {
   width: 30%;
   padding: 2rem;
   display: flex;
@@ -65,13 +79,9 @@ header {
   justify-content: flex-end;
 }
 
-.presentationText p {
-  margin: 0 0 3rem 0;
-}
-
 header img {
-  height: 50rem;
-  width: 50rem;
+  height: 40rem;
+  width: 45rem;
   border-radius: 100%;
 }
 
@@ -91,8 +101,9 @@ main h2 {
 main .page2 {
   display: flex;
   justify-content: center;
-  padding: 10rem;
-  border: solid 0.5rem black;
+  padding: 5rem;
+  border: solid 0.2rem #111;
+  background-color: #eee;
   border-radius: 10rem;
 }
 
@@ -129,7 +140,7 @@ main .rightColumn img {
 .page3 .cards {
   display: flex;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .page3 .card {
@@ -139,6 +150,10 @@ main .rightColumn img {
   padding: 1rem;
 }
 
+.page3 .card .cardTitle {
+  margin: 1rem 0;
+}
+
 .page3 .card img {
   border-radius: 50rem;
   height: 20rem;
@@ -146,9 +161,19 @@ main .rightColumn img {
   margin: auto;
 }
 
+.page3 .labels {
+  text-align: center;
+}
+
+.page3 #label {
+  margin: 5rem;
+}
+
+/* ------------------------------------------- Page 4 ------------------------------------------- */
+
 /* Logos Clients */
 
-#logoClient0 {
+/* #logoClient0 {
   background-image: url("./content/logos clients/esso.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -194,47 +219,7 @@ main .rightColumn img {
   background-image: url("./content/logos clients/bp.png");
   background-size: contain;
   background-repeat: no-repeat;
-}
-
-.page3 .labels {
-  text-align: center;
-}
-
-.page3 #label {
-  margin: 5rem;
-}
-
-/* ------------------------------------------- Page 4 ------------------------------------------- */
-
-.page4 {
-  height: 100vh;
-  width: 80%;
-  margin: auto;
-}
-
-.page4 h2 {
-  text-align: center;
-  margin: 2rem 0;
-}
-
-.page4 p {
-  text-align: center;
-}
-
-.logosClients {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-/* Logo Client */
-
-.logoClient {
-  width: 20rem;
-  height: 20rem;
-  border: solid 0.5rem black;
-  border-radius: 50rem;
-  margin: 2rem;
-  background-position: center;
-}
+} */
 
 /* ------------------------------------------- Page 5 ------------------------------------------- */
 
@@ -259,7 +244,7 @@ main .rightColumn img {
 }
 
 .contact .phoneMailLogo {
-  width: 50%;
+  width: 45%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -267,11 +252,23 @@ main .rightColumn img {
   align-items: center;
 }
 
+#infosEts {
+  border: solid 0.1rem black;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+  border-radius: 10rem;
+  text-align: justify;
+  background-color: #eee;
+}
+
 .contact .contactForm {
-  width: 50%;
+  width: 45%;
+  margin: auto;
   padding: 2rem;
   border: solid 0.2rem black;
   border-radius: 5rem;
+  background-color: #eee;
+  text-align: center;
 }
 
 .formContact {
@@ -282,11 +279,18 @@ main .rightColumn img {
 .formContact input {
   margin: auto;
   margin: 2rem 0;
+  padding: 0.5rem;
 }
 
 .formContact textarea {
+  padding: 1rem;
   margin: 2rem 0;
   resize: none;
+}
+
+.formContact button {
+  width: 80%;
+  margin: auto;
 }
 
 /* Logo Ets */
@@ -318,7 +322,24 @@ footer ul li {
 /* ------------------------------------------- Effets ------------------------------------------- */
 
 a:hover {
-  color: red;
+  color: rgb(63, 63, 228);
+  transform: scale(1.1);
+}
+
+ul li:hover {
+  transform: scale(1.1);
+}
+
+ul li:last-child:hover {
+  transform: none;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 /* ------------------------------------------- Responsive Design ------------------------------------------- */
