@@ -12,6 +12,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
   background-image: url("./content/bg_page1.png"), url("./content/bg_page2.png");
   background-position: top, bottom;
   background-repeat: no-repeat, no-repeat;
@@ -22,7 +23,7 @@ ul {
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -35,6 +36,15 @@ button {
 
 img {
   object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 2.5rem;
+  font-family: "Stardos Stencil", cursive;
 }
 
 /* ------------------------------------------- Page 1 ------------------------------------------- */
@@ -72,11 +82,18 @@ header {
 }
 
 .welcomeText {
+  font-family: "Stardos Stencil", cursive;
+  font-size: 2rem;
+  color: white;
   width: 30%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.welcomeText span {
+  color: orange;
 }
 
 header img {
@@ -113,10 +130,12 @@ main .leftColumn {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: justify;
 }
 
 main .rightColumn img {
   height: 40rem;
+  width: 90%;
 }
 
 /* ------------------------------------------- Page 3 ------------------------------------------- */
@@ -148,6 +167,7 @@ main .rightColumn img {
   text-align: center;
   margin: 0 1rem;
   padding: 1rem;
+  background-color: #eee;
 }
 
 .page3 .card .cardTitle {
@@ -161,67 +181,15 @@ main .rightColumn img {
   margin: auto;
 }
 
-.page3 .labels {
+.page3 .agréments {
   text-align: center;
 }
 
-.page3 #label {
+.page3 #agrément {
   margin: 5rem;
 }
 
 /* ------------------------------------------- Page 4 ------------------------------------------- */
-
-/* Logos Clients */
-
-/* #logoClient0 {
-  background-image: url("./content/logos clients/esso.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient1 {
-  background-image: url("./content/logos clients/elan.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient2 {
-  background-image: url("./content/logos clients/elf.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient3 {
-  background-image: url("./content/logos clients/fina.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient4 {
-  background-image: url("./content/logos clients/total.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient5 {
-  background-image: url("./content/logos clients/shell.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient6 {
-  background-image: url("./content/logos clients/agip.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-#logoClient7 {
-  background-image: url("./content/logos clients/bp.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
-/* ------------------------------------------- Page 5 ------------------------------------------- */
 
 .contact {
   height: 100vh;
@@ -259,12 +227,27 @@ main .rightColumn img {
   border-radius: 10rem;
   text-align: justify;
   background-color: #eee;
+  width: 70%;
 }
+
+/* Logo Ets */
+
+.logoEts {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50rem;
+  background-image: url("./content/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Formulaire de Contact */
 
 .contact .contactForm {
   width: 45%;
-  margin: auto;
-  padding: 2rem;
+  height: 90%;
+  margin: 0 auto;
+  padding: 1rem;
   border: solid 0.2rem black;
   border-radius: 5rem;
   background-color: #eee;
@@ -274,11 +257,13 @@ main .rightColumn img {
 .formContact {
   display: flex;
   flex-direction: column;
+  height: 90%;
+  padding: 2rem auto;
 }
 
 .formContact input {
-  margin: auto;
-  margin: 2rem 0;
+  width: 100%;
+  margin: 1rem auto;
   padding: 0.5rem;
 }
 
@@ -291,17 +276,6 @@ main .rightColumn img {
 .formContact button {
   width: 80%;
   margin: auto;
-}
-
-/* Logo Ets */
-
-.logoEts {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50rem;
-  background-image: url("./content/logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /* Footer */
@@ -319,6 +293,20 @@ footer ul li {
   margin-right: 2rem;
 }
 
+.contact a {
+  color: black;
+}
+
+/* ------------------------------------------- Pages Annexes ------------------------------------------- */
+
+.page1 #navbar2 ul {
+  justify-content: flex-start;
+}
+
+.page1 #navbar2 img {
+  height: 10rem;
+}
+
 /* ------------------------------------------- Effets ------------------------------------------- */
 
 a:hover {
@@ -330,7 +318,7 @@ ul li:hover {
   transform: scale(1.1);
 }
 
-ul li:last-child:hover {
+nav ul li:last-child:hover {
   transform: none;
 }
 
@@ -343,3 +331,180 @@ button:hover {
 }
 
 /* ------------------------------------------- Responsive Design ------------------------------------------- */
+
+@media screen and (max-width: 1300px) {
+  /* Page 1 */
+
+  /* Page 2 */
+
+  main .page2 {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .page2 .leftColumn {
+    width: 100%;
+  }
+
+  /* Page 3 */
+
+  .page3 .cards {
+    flex-wrap: wrap;
+  }
+
+  .page3 .card {
+    width: 20%;
+  }
+
+  .page3 p {
+    text-align: justify;
+  }
+
+  .page3 .card img {
+    width: 70%;
+    height: 70%;
+  }
+
+  /* Page 4 */
+}
+
+@media screen and (max-width: 1130px) {
+  /* Page 1 */
+
+  /* Page 2 */
+
+  .main {
+    font-size: 0.2rem;
+  }
+  /* Page 3 */
+
+  /* Page 4 */
+  .contact {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  a:hover {
+    transform: none;
+  }
+
+  /* Page 1 */
+
+  .page1 {
+    height: 70vh;
+  }
+
+  .page1 header {
+    margin-bottom: 0;
+  }
+
+  /* Page 2 */
+
+  main {
+    height: 111vh;
+    margin-top: 0;
+  }
+
+  /* Page 3 */
+
+  .page3 {
+    height: 160vh;
+  }
+
+  .page3 .card {
+    width: 40%;
+    margin: auto;
+    margin: 1rem;
+  }
+
+  /* Page 4 */
+
+  .contact {
+    height: 130vh;
+  }
+
+  #infosEts {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  /* Page 1 */
+
+  .page1 {
+    height: 140vh;
+  }
+
+  .fb {
+    justify-content: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  header img {
+    height: 50%;
+    width: 50%;
+  }
+
+  header .welcomeText {
+    width: 30%;
+  }
+
+  header .welcomeText p {
+    text-align: center;
+  }
+
+  header .button1 {
+    width: 190%;
+  }
+
+  /* Page 2 */
+
+  main {
+    height: 140vh;
+  }
+
+  #agréments {
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* Page 3 */
+
+  .page3 {
+    height: 192vh;
+  }
+
+  /* Page 4 */
+
+  .contact {
+    height: 190vh;
+    align-items: center;
+  }
+
+  #infosEts {
+    width: 160%;
+  }
+
+  .forms {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact .contactForm {
+    width: 90%;
+  }
+}
