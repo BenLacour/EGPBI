@@ -36,6 +36,7 @@ button {
 
 img {
   object-fit: cover;
+  max-width: 100%;
 }
 
 h1,
@@ -50,7 +51,6 @@ h5 {
 /* ------------------------------------------- Page 1 ------------------------------------------- */
 
 .page1 {
-  height: 100vh;
   width: 80%;
   margin: auto;
 }
@@ -83,7 +83,7 @@ header {
 
 .welcomeText {
   font-family: "Stardos Stencil", cursive;
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   width: 30%;
   padding: 2rem;
@@ -92,8 +92,13 @@ header {
   justify-content: flex-end;
 }
 
-.welcomeText span {
+span {
   color: orange;
+}
+
+.button1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
 }
 
 header img {
@@ -105,7 +110,6 @@ header img {
 /* ------------------------------------------- Page 2 ------------------------------------------- */
 
 main {
-  height: 100vh;
   width: 80%;
   margin: auto;
 }
@@ -120,7 +124,7 @@ main .page2 {
   justify-content: center;
   padding: 5rem;
   border: solid 0.2rem #111;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8);
   border-radius: 10rem;
 }
 
@@ -133,15 +137,28 @@ main .leftColumn {
   text-align: justify;
 }
 
+main .rightColumn {
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
 main .rightColumn img {
   height: 40rem;
-  width: 90%;
+  width: 100%;
+}
+
+.carousel-item img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
 }
 
 /* ------------------------------------------- Page 3 ------------------------------------------- */
 
 .page3 {
-  height: 100vh;
   width: 80%;
   margin: auto;
 }
@@ -163,11 +180,14 @@ main .rightColumn img {
 }
 
 .page3 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 23%;
   text-align: center;
   margin: 0 1rem;
   padding: 1rem;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8);
 }
 
 .page3 .card .cardTitle {
@@ -189,10 +209,13 @@ main .rightColumn img {
   margin: 5rem;
 }
 
+.page3 .certification img {
+  width: 60%;
+}
+
 /* ------------------------------------------- Page 4 ------------------------------------------- */
 
 .contact {
-  height: 100vh;
   width: 80%;
   margin: auto;
 }
@@ -226,7 +249,7 @@ main .rightColumn img {
   margin-bottom: 2rem;
   border-radius: 10rem;
   text-align: justify;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8);
   width: 70%;
 }
 
@@ -250,7 +273,7 @@ main .rightColumn img {
   padding: 1rem;
   border: solid 0.2rem black;
   border-radius: 5rem;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0.8);
   text-align: center;
 }
 
@@ -307,6 +330,22 @@ footer ul li {
   height: 10rem;
 }
 
+header h2 {
+  font-family: "Stardos Stencil", cursive;
+  font-size: 5rem;
+  width: 50%;
+  color: #eee;
+}
+
+#carouselsPages {
+  width: 60%;
+  margin: auto;
+}
+
+.footer1 {
+  padding: 3rem;
+}
+
 /* ------------------------------------------- Effets ------------------------------------------- */
 
 a:hover {
@@ -331,6 +370,29 @@ button:hover {
 }
 
 /* ------------------------------------------- Responsive Design ------------------------------------------- */
+
+@viewport {
+  width: fit-content;
+  zoom: 1;
+}
+
+/* @media screen and (min-width: 1301px) {
+  .page1 {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .page3 {
+    width: 100%;
+  }
+
+  .contact {
+    width: 100%;
+  }
+} */
 
 @media screen and (max-width: 1300px) {
   /* Page 1 */
@@ -391,9 +453,9 @@ button:hover {
 
   /* Page 1 */
 
-  .page1 {
+  /* .page1 {
     height: 70vh;
-  }
+  } */
 
   .page1 header {
     margin-bottom: 0;
@@ -401,16 +463,16 @@ button:hover {
 
   /* Page 2 */
 
-  main {
-    height: 111vh;
-    margin-top: 0;
-  }
+  /* main {
+    height: 111vh; */
+  /* margin-top: 0;
+  } */
 
   /* Page 3 */
 
-  .page3 {
+  /* .page3 {
     height: 160vh;
-  }
+  } */
 
   .page3 .card {
     width: 40%;
@@ -420,9 +482,9 @@ button:hover {
 
   /* Page 4 */
 
-  .contact {
+  /* .contact {
     height: 130vh;
-  }
+  } */
 
   #infosEts {
     width: 90%;
@@ -432,9 +494,9 @@ button:hover {
 @media screen and (max-width: 800px) {
   /* Page 1 */
 
-  .page1 {
+  /* .page1 {
     height: 140vh;
-  }
+  } */
 
   .fb {
     justify-content: center;
@@ -460,22 +522,18 @@ button:hover {
   }
 
   header .welcomeText {
-    width: 30%;
+    width: 90%;
   }
 
   header .welcomeText p {
     text-align: center;
   }
 
-  header .button1 {
-    width: 190%;
-  }
-
   /* Page 2 */
 
-  main {
+  /* main {
     height: 140vh;
-  }
+  } */
 
   #agréments {
     margin: 1rem;
@@ -484,14 +542,14 @@ button:hover {
 
   /* Page 3 */
 
-  .page3 {
+  /* .page3 {
     height: 192vh;
-  }
+  } */
 
   /* Page 4 */
 
   .contact {
-    height: 190vh;
+    /* height: 190vh; */
     align-items: center;
   }
 
@@ -506,5 +564,49 @@ button:hover {
 
   .contact .contactForm {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  /* Page 1 */
+
+  .page1 .welcomeText {
+    width: 80%;
+    margin: auto;
+  }
+
+  header .button1 {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Page 2 */
+
+  main {
+    width: 98%;
+    /* height: 140vh; */
+  }
+
+  /* Page 3 */
+
+  .page3 {
+    /* height: 303vh; */
+    width: 100%;
+    margin: auto;
+  }
+
+  .page3 .card {
+    width: 95%;
+  }
+
+  /* Page 4 */
+
+  .contact {
+    width: 100%;
+  }
+
+  .phoneMailLogo {
+    width: 60%;
+    margin: auto;
   }
 }

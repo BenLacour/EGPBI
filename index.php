@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EGPBI est l'entreprise de peinture en batiment et industrielle qui répondra à toutes vos attentes">
   <!-- Lien Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Lien Google Font -->
@@ -49,13 +50,15 @@
       </div>
       <!-- Texte présentation -->
       <div class="welcomeText">
-        <p>RELOOKING <span>STATIONS</span></p>
-        <p><span>POSE</span> D'ENSEIGNES</p>
-        <p>RÉFECTION <span>DE CUVES</span></p>
-        <p><span>CLOISONS</span> SÈCHES</p>
-        <p>PLAFONDS ET <span>SOLS TECHNIQUES</span></p>
+        <p>PEINTURE <span>ANTICORROSION</span> & ETANCHEITE <br>
+          RELOOKING <span>STATIONS</span>
+          <span>POSE</span> D'ENSEIGNES
+          RÉFECTION <span>DE CUVES</span>
+          <span>CLOISONS</span> SÈCHES
+          PLAFONDS ET <span>SOLS TECHNIQUES</span>
+        </p>
 
-        <button class="button1">Nos Réalisations</button>
+        <a href="#prestations"><button class="button1">Nos Réalisations</button></a>
       </div>
     </header>
   </div>
@@ -74,9 +77,7 @@
           façade, d’intérieur, réagencement placo ou autre).
         </p>
         <p>
-          Notre entreprise est certifiée ACQPA, RGE, avec les agréments
-          électriques pour des petites opérations et l’agrément HSSE. La
-          société EGPB&I peut intervenir sur de nombreux sites.
+          Notre entreprise est certifiée ACQPA N2 option ABE, RGE, avec les agréments électriques pour des petites opérations et l’agrément HSSE, nous pouvons intervenir sur de nombreux sites.
         </p>
       </div>
       <!-- Colonne Photos Droite -->
@@ -119,9 +120,7 @@
         <div class="cardBody">
           <h3 class="cardTitle">Stations Services</h3>
           <p class="cardText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in,
-            modi nulla fugit animi sint sapiente quam? In nemo, laboriosam
-            possimus eligendi quidem eaque. Voluptatum.
+            Présent sur 22 départements du Grand Sud-Ouest de la France, les stations sont refaites dans leur intégralité, de la bordure du trottoir au changement d’enseigne en passant par la réfection du haut vent, des distributeurs ...
           </p>
           <a href="./index2.html"><button>Découvrir</button></a>
         </div>
@@ -132,9 +131,9 @@
         <div class="cardBody">
           <h3 class="cardTitle">Réfections de Cuves</h3>
           <p class="cardText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in,
-            modi nulla fugit animi sint sapiente quam? In nemo, laboriosam
-            possimus eligendi quidem eaque. Voluptatum.
+            Certifié ACQPA N2 ABE, les dépôts sont nettoyés et les points de corrosion traités avant d’être peints ou repeints avec une peinture anti corrosion. <br>
+            Les bacs sont nettoyés et une imperméabilisation est réalisée
+
           </p>
           <a href="./index3.html"><button>Découvrir</button></a>
         </div>
@@ -145,9 +144,7 @@
         <div class="cardBody">
           <h3 class="cardTitle">Distributeurs</h3>
           <p class="cardText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in,
-            modi nulla fugit animi sint sapiente quam? In nemo, laboriosam
-            possimus eligendi quidem eaque. Voluptatum.
+            Les portes de distributeurs sont dégraissées, poncées puis repeintes au pistolet basse pression, à la peinture polyuréthane pour un meilleur rendu. Généralement peintes sur place, il est toujours possible de les peindre en atelier
           </p>
           <a href="./index4.html"><button>Découvrir</button></a>
         </div>
@@ -158,20 +155,22 @@
         <div class="cardBody">
           <h3 class="cardTitle">Divers</h3>
           <p class="cardText">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga in,
-            modi nulla fugit animi sint sapiente quam? In nemo, laboriosam
-            possimus eligendi quidem eaque. Voluptatum.
+            Le bâtiment est un milieu passionnant en constante évolution avec des champs d’exploration aussi vastes que divers et avec plus de 20 ans d’expériences dans ce domaine, j’ai exploré un certain nombre d’entre eux : isolation, agencement, etc…
           </p>
-          <a href="#!"><button>Découvrir</button></a>
+          <a href="./index5.html"><button>Découvrir</button></a>
         </div>
       </div>
     </article>
     <!-- Labels -->
     <div class="agréments">
-      <h2>Agréments</h2>
-      <a href="https://www.acqpa.com/" target="_blank"><button id="agrément">ACQPA</button></a>
-      <a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F32251" target="_blank"><button id="agrément">RGE</button></a>
-      <button id="agrément">HSSE</button>
+      <h2>Agréments & Certificat</h2>
+      <a href="https://www.acqpa.com/" target="_blank"><button id="agrément">ACQPA N2 Options ABE</button></a>
+      <a href="https://www.service-public.fr/professionnels-entreprises/vosdroits/F32251" target="_blank"><button id="agrément">R.G.E.</button></a>
+      <button id="agrément">H.S.S.E.</button>
+      <!-- Certificat ACQPA -->
+      <div class="certification">
+        <img src="./content/certificat ACQPA.PNG" alt="certificat" />
+      </div>
     </div>
   </div>
   <!------------------------------------ Page 4 ------------------------------------>
@@ -188,7 +187,7 @@
           <i class="fas fa-signature"></i> Sébastien VILCHES
         </div>
         <div class="phone" id="infosEts">
-          <i class="fas fa-phone"></i> 06.28.81.67.56
+          <i class="fas fa-phone"></i> <a href="tel:+33628816756">06.28.81.67.56</a>
         </div>
         <div class="mail" id="infosEts">
           <i class="far fa-envelope"></i> <a href="mailto:egpbi.sv@gmail.com"> egpbi.sv@gmail.com</a>
@@ -201,11 +200,7 @@
 
         <!-- Footer -->
         <footer>
-          <ul>
-            <li><a href="#!">Politique de Confidentialité</a></li>
-            <li><a href="#!">Mentions Légales</a></li>
-            <li><a href="index.php#accueil">Accueil</a></li>
-          </ul>
+          <a href="index.php#accueil">Haut de page</a>
         </footer>
 
       </div>
@@ -215,30 +210,62 @@
 
       <?php
 
+      // Définition des variables
+
       $object = htmlspecialchars($_POST["object"]);
       $nomFamille = htmlspecialchars($_POST["name"]);
-      $prenom = htmlspecialchars($_POST["firstName"]);
+      $entreprise = htmlspecialchars($_POST["enterprise"]);
       $mail = htmlspecialchars($_POST["mail"]);
       $message = htmlspecialchars($_POST["message"]);
 
+      // Traitement de l'envoi
 
-      if (isset($_POST["name"]) && isset($_POST["firstName"]) && isset($_POST["mail"]) && isset($_POST["message"])) {
-        mail("bnjmn.lacour@gmail.com", $object, $prenom . " " . $nomFamille . " " . $mail, $message);
-      }
+      $msg = "Nom Prenom:\t$nomFamille\n";
+      $msg .= "Entreprise:\t$entreprise\n";
+      $msg .= "E-Mail:\t$mail\n";
+      $msg .= "Message:\t$message\n\n";
+
+      $recipient = "bnjmnlacour@gmail.com";
+      $subject = "Objet:\t$object\n";
+
+      $mailheaders = "Envoyé depuis le formulaire de contact du site \n";
+      $mailheaders .= "Repondre à : $mail\n\n";
+
+      mail($recipient, $subject, $msg, $mailheaders);
+
+      // if (mail($recipient, $subject, $msg, $mailheaders)) {
+      //   $success = "<div class = 'alert alert-sucess mt-3'>Message bien envoyé !</div>";
+      // }
+
+      // echo "<HTML><HEAD>";
+      // echo "<TITLE>Formulaire envoyé!</TITLE></HEAD><BODY>";
+      // echo "<p>Merci, $prenom . $nomFamille </p>";
+      // echo "<P>Votre message à bien été envoyé !</P>";
+      // echo "</BODY></HTML>";
 
       ?>
 
       <div class="contactForm">
         <h4>Formulaire de Contact</h4>
-        <form method="post" action="index.php" class="formContact">
+        <form method="post" action="index.php#contact" class="formContact">
           <input name="object" type="text" placeholder="Sujet" required />
-          <input name="name" type="text" placeholder="Nom" required />
-          <input name="firstName" type="text" placeholder="Prénom" required />
+          <input name="name" type="text" placeholder="Nom Prénom" required />
+          <input name="enterprise" type="text" placeholder="Entreprise" required />
           <input name="mail" type="email" placeholder="Adresse Mail" required />
           <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre Message" required></textarea>
           <button type="submit">Envoyer</button>
         </form>
+
+        <?php
+
+        // Message succès envoi
+
+        $success ?? ''
+
+        ?>
+
       </div>
+
     </div>
   </div>
   <!-- Script Bootstrap -->
