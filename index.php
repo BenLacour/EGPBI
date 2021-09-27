@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="EGPBI est l'entreprise de peinture en batiment et industrielle qui répondra à toutes vos attentes">
+  <meta name="description" content="EGPBI est l'entreprise de peinture en batiment et industrielle qui répondra à toutes vos attentes dans le grand Sud-Ouest">
   <!-- Lien Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- Lien Google Font -->
@@ -115,51 +115,59 @@
     <!-- Cartes exemples -->
     <article class="cards">
       <!-- Carte 1 -->
-      <div class="card" id="card0">
-        <img src="./content/station services/blaignac sur cele 46 (2).JPG" alt="Station Service" />
-        <div class="cardBody">
-          <h3 class="cardTitle">Stations Services</h3>
-          <p class="cardText">
-            Présent sur 22 départements du Grand Sud-Ouest de la France, les stations sont refaites dans leur intégralité, de la bordure du trottoir au changement d’enseigne en passant par la réfection du haut vent, des distributeurs ...
-          </p>
-          <a href="./index2.html"><button>Découvrir</button></a>
+      <a href="./index2.html">
+        <div class="card" id="card0">
+          <img src="./content/station services/blaignac sur cele 46 (2).JPG" alt="Station Service" />
+          <div class="cardBody">
+            <h3 class="cardTitle">Stations Services</h3>
+            <p class="cardText">
+              Présent sur 22 départements du Grand Sud-Ouest de la France, les stations sont refaites dans leur intégralité, de la bordure du trottoir au changement d’enseigne en passant par la réfection du haut vent, des distributeurs ...
+            </p>
+            <a href="./index2.html"><button>Découvrir</button></a>
+          </div>
         </div>
-      </div>
+      </a>
       <!-- Carte 2 -->
-      <div class="card" id="card1">
-        <img src="./content/depots/Baraqueville 12/depot de barraqueville 1.JPG" alt="Cuves" />
-        <div class="cardBody">
-          <h3 class="cardTitle">Réfections de Cuves</h3>
-          <p class="cardText">
-            Certifié ACQPA N2 ABE, les dépôts sont nettoyés et les points de corrosion traités avant d’être peints ou repeints avec une peinture anti corrosion. <br>
-            Les bacs sont nettoyés et une imperméabilisation est réalisée
+      <a href="./index3.html">
+        <div class="card" id="card1">
+          <img src="./content/depots/Baraqueville 12/depot de barraqueville 1.JPG" alt="Cuves" />
+          <div class="cardBody">
+            <h3 class="cardTitle">Réfections de Cuves</h3>
+            <p class="cardText">
+              Certifié ACQPA N2 ABE, les dépôts sont nettoyés et les points de corrosion traités avant d’être peints ou repeints avec une peinture anti corrosion. <br>
+              Les bacs sont nettoyés et une imperméabilisation est réalisée
 
-          </p>
-          <a href="./index3.html"><button>Découvrir</button></a>
+            </p>
+            <a href="./index3.html"><button>Découvrir</button></a>
+          </div>
         </div>
-      </div>
+      </a>
       <!-- Carte 3 -->
-      <div class="card" id="card2">
-        <img src="./content/refection distributeur/saint pierre d'eyraud.JPG" alt="distributeur" />
-        <div class="cardBody">
-          <h3 class="cardTitle">Distributeurs</h3>
-          <p class="cardText">
-            Les portes de distributeurs sont dégraissées, poncées puis repeintes au pistolet basse pression, à la peinture polyuréthane pour un meilleur rendu. Généralement peintes sur place, il est toujours possible de les peindre en atelier
-          </p>
-          <a href="./index4.html"><button>Découvrir</button></a>
+      <a href="./index4.html">
+        <div class="card" id="card2">
+          <img src="./content/refection distributeur/saint pierre d'eyraud.JPG" alt="Distributeur" />
+          <div class="cardBody">
+            <h3 class="cardTitle">Distributeurs</h3>
+            <p class="cardText">
+              Les portes de distributeurs sont dégraissées, poncées puis repeintes au pistolet basse pression, à la peinture polyuréthane pour un meilleur rendu. Généralement peintes sur place, il est toujours possible de les peindre en atelier
+            </p>
+            <a href="./index4.html"><button>Découvrir</button></a>
+          </div>
         </div>
-      </div>
+      </a>
       <!-- Carte 4 -->
-      <div class="card" id="card3">
-        <img src="./content/souprosse 40.JPG" alt="" />
-        <div class="cardBody">
-          <h3 class="cardTitle">Divers</h3>
-          <p class="cardText">
-            Le bâtiment est un milieu passionnant en constante évolution avec des champs d’exploration aussi vastes que divers et avec plus de 20 ans d’expériences dans ce domaine, j’ai exploré un certain nombre d’entre eux : isolation, agencement, etc…
-          </p>
-          <a href="./index5.html"><button>Découvrir</button></a>
+      <a href="./index5.html">
+        <div class="card" id="card3">
+          <img src="./content/dga/30052012563.jpg" alt="Divers" />
+          <div class="cardBody">
+            <h3 class="cardTitle">Divers</h3>
+            <p class="cardText">
+              Le bâtiment est un milieu passionnant en constante évolution avec des champs d’exploration aussi vastes que divers et avec plus de 20 ans d’expériences dans ce domaine, j’ai exploré un certain nombre d’entre eux : isolation, agencement, etc…
+            </p>
+            <a href="./index5.html"><button>Découvrir</button></a>
+          </div>
         </div>
-      </div>
+      </a>
     </article>
     <!-- Labels -->
     <div class="agréments">
@@ -204,6 +212,7 @@
         </footer>
 
       </div>
+
       <!-- Colonne Droite -->
 
       <!-- PHP gestion du mailing -->
@@ -212,60 +221,51 @@
 
       // Définition des variables
 
-      $object = htmlspecialchars($_POST["object"]);
-      $nomFamille = htmlspecialchars($_POST["name"]);
-      $entreprise = htmlspecialchars($_POST["enterprise"]);
-      $mail = htmlspecialchars($_POST["mail"]);
-      $message = htmlspecialchars($_POST["message"]);
+      $object = $_POST["object"];
+      $nomFamille = $_POST["name"];
+      $entreprise = $_POST["enterprise"];
+      $mail = $_POST["mail"];
+      $message = $_POST["message"];
 
       // Traitement de l'envoi
 
-      $msg = "Nom Prenom:\t$nomFamille\n";
-      $msg .= "Entreprise:\t$entreprise\n";
-      $msg .= "E-Mail:\t$mail\n";
-      $msg .= "Message:\t$message\n\n";
+      if (
+        isset($_POST["object"]) && isset($_POST["name"]) && isset($_POST["enterprise"]) && isset($_POST["mail"]) && isset($_POST["message"])
+        && $_POST["object"] != "" && $_POST["name"] != "" && $_POST["enterprise"] != "" && $_POST["mail"] != "" && $_POST["message"] != ""
+      ) {
 
-      $recipient = "bnjmnlacour@gmail.com";
-      $subject = "Objet:\t$object\n";
+        $msg = "Nom Prenom:\t$nomFamille\n";
+        $msg .= "Entreprise:\t$entreprise\n";
+        $msg .= "E-Mail:\t$mail\n";
+        $msg .= "Message:\t$message\n\n";
 
-      $mailheaders = "Envoyé depuis le formulaire de contact du site \n";
-      $mailheaders .= "Repondre à : $mail\n\n";
+        $recipient = "egpbi.sv@gmail.com";
+        $subject = " \t$object\n";
 
-      mail($recipient, $subject, $msg, $mailheaders);
+        $mailheaders = "Envoyé depuis le formulaire de contact du site \n";
+        $mailheaders .= "Repondre à : $mail\n\n";
 
-      // if (mail($recipient, $subject, $msg, $mailheaders)) {
-      //   $success = "<div class = 'alert alert-sucess mt-3'>Message bien envoyé !</div>";
-      // }
+        mail($recipient, $subject, $msg, $mailheaders);
 
-      // echo "<HTML><HEAD>";
-      // echo "<TITLE>Formulaire envoyé!</TITLE></HEAD><BODY>";
-      // echo "<p>Merci, $prenom . $nomFamille </p>";
-      // echo "<P>Votre message à bien été envoyé !</P>";
-      // echo "</BODY></HTML>";
+        // Message validation envoi mail
 
+        $validation = '<div class = "alert alert-success mt-3">Merci, le message a bien été envoyé !</div>';
+      }
       ?>
 
       <div class="contactForm">
         <h4>Formulaire de Contact</h4>
         <form method="post" action="index.php#contact" class="formContact">
-          <input name="object" type="text" placeholder="Sujet" required />
-          <input name="name" type="text" placeholder="Nom Prénom" required />
-          <input name="enterprise" type="text" placeholder="Entreprise" required />
-          <input name="mail" type="email" placeholder="Adresse Mail" required />
+          <input name="object" type="text" placeholder="Sujet de la demande" required />
+          <input name="name" type="text" placeholder="Votre Prénom et Nom" required />
+          <input name="enterprise" type="text" placeholder="Votre Entreprise" required />
+          <input name="mail" type="email" placeholder="Votre Adresse Mail" required />
           <textarea name="message" id="message" cols="30" rows="5" placeholder="Votre Message" required></textarea>
           <button type="submit">Envoyer</button>
+          <!-- Div alert success pour message OK -->
+          <?= $validation ?? '' ?>
         </form>
-
-        <?php
-
-        // Message succès envoi
-
-        $success ?? ''
-
-        ?>
-
       </div>
-
     </div>
   </div>
   <!-- Script Bootstrap -->

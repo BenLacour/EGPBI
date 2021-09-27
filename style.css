@@ -14,6 +14,8 @@ body {
   font-size: 1.6rem;
   font-family: "Poppins", sans-serif;
   background-image: url("./content/bg_page1.png"), url("./content/bg_page2.png");
+  background-size: contain;
+  background-clip: border-box;
   background-position: top, bottom;
   background-repeat: no-repeat, no-repeat;
 }
@@ -25,6 +27,7 @@ ul {
 a {
   color: white;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 button {
@@ -32,11 +35,16 @@ button {
   border-radius: 10rem;
   background-color: #1a8093;
   color: white;
+  transition: all 0.2s ease-in-out;
 }
 
 img {
   object-fit: cover;
   max-width: 100%;
+}
+
+.page3 a {
+  color: black;
 }
 
 h1,
@@ -72,6 +80,7 @@ nav ul {
 
 nav ul li {
   margin-left: 2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Header */
@@ -188,6 +197,7 @@ main .rightColumn img {
   margin: 0 1rem;
   padding: 1rem;
   background-color: rgba(238, 238, 238, 0.8);
+  transition: all 0.2s ease-in-out;
 }
 
 .page3 .card .cardTitle {
@@ -207,6 +217,7 @@ main .rightColumn img {
 
 .page3 #agrément {
   margin: 5rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .page3 .certification img {
@@ -299,6 +310,7 @@ main .rightColumn img {
 .formContact button {
   width: 80%;
   margin: auto;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Footer */
@@ -314,6 +326,7 @@ footer ul {
 
 footer ul li {
   margin-right: 2rem;
+  transition: all 0.2s ease-in-out;
 }
 
 .contact a {
@@ -338,7 +351,16 @@ header h2 {
 }
 
 #carouselsPages {
-  width: 60%;
+  width: 80%;
+  margin: 1rem auto;
+  display: block;
+}
+
+#carouselsPages .carousel-item img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: block;
   margin: auto;
 }
 
@@ -366,7 +388,12 @@ button:hover {
 }
 
 .card:hover {
+  cursor: pointer;
   transform: scale(1.05);
+}
+
+.page3 a:hover {
+  color: black;
 }
 
 /* ------------------------------------------- Responsive Design ------------------------------------------- */
@@ -375,24 +402,6 @@ button:hover {
   width: fit-content;
   zoom: 1;
 }
-
-/* @media screen and (min-width: 1301px) {
-  .page1 {
-    width: 100%;
-  }
-
-  main {
-    width: 100%;
-  }
-
-  .page3 {
-    width: 100%;
-  }
-
-  .contact {
-    width: 100%;
-  }
-} */
 
 @media screen and (max-width: 1300px) {
   /* Page 1 */
@@ -453,26 +462,17 @@ button:hover {
 
   /* Page 1 */
 
-  /* .page1 {
-    height: 70vh;
-  } */
-
   .page1 header {
     margin-bottom: 0;
   }
 
   /* Page 2 */
 
-  /* main {
-    height: 111vh; */
-  /* margin-top: 0;
-  } */
+  .rightColmun {
+    width: 80%;
+  }
 
   /* Page 3 */
-
-  /* .page3 {
-    height: 160vh;
-  } */
 
   .page3 .card {
     width: 40%;
@@ -482,10 +482,6 @@ button:hover {
 
   /* Page 4 */
 
-  /* .contact {
-    height: 130vh;
-  } */
-
   #infosEts {
     width: 90%;
   }
@@ -493,10 +489,6 @@ button:hover {
 
 @media screen and (max-width: 800px) {
   /* Page 1 */
-
-  /* .page1 {
-    height: 140vh;
-  } */
 
   .fb {
     justify-content: center;
@@ -531,25 +523,20 @@ button:hover {
 
   /* Page 2 */
 
-  /* main {
-    height: 140vh;
-  } */
+  .rightColmun {
+    width: 80%;
+  }
+
+  /* Page 3 */
 
   #agréments {
     margin: 1rem;
     flex-wrap: wrap;
   }
 
-  /* Page 3 */
-
-  /* .page3 {
-    height: 192vh;
-  } */
-
   /* Page 4 */
 
   .contact {
-    /* height: 190vh; */
     align-items: center;
   }
 
@@ -568,6 +555,12 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
+  /* Changements pour background téléphones */
+
+  body {
+    background-size: auto;
+  }
+
   /* Page 1 */
 
   .page1 .welcomeText {
@@ -584,13 +577,15 @@ button:hover {
 
   main {
     width: 98%;
-    /* height: 140vh; */
+  }
+
+  .rightColmun {
+    width: 80%;
   }
 
   /* Page 3 */
 
   .page3 {
-    /* height: 303vh; */
     width: 100%;
     margin: auto;
   }
